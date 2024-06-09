@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/garisbottomsheet" />
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Title and Clear Filter Button -->
+
+
+        <TextView
+            android:id="@+id/tvFilterTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jakbold"
+            android:text="Filter"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnClearFilter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnClearFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/jak"
+            android:text="Hapus Filter"
+            android:textColor="@color/orensa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Date Range Section -->
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Tanggal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakmed"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFilterTitle" />
+
+        <TextView
+            android:id="@+id/tvMulai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/jak"
+            android:text="Mulai"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvSampai"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTanggal" />
+
+        <EditText
+            android:id="@+id/etMulai"
+            android:layout_width="147dp"
+            android:layout_height="40dp"
+            android:background="@drawable/email"
+            android:hint="Pilih Tanggal"
+            android:textColor="@color/black"
+            android:inputType="datetime"
+            android:paddingStart="12dp"
+            android:textSize="14dp"
+            android:textColorHint="#909090"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMulai" />
+
+
+        <!-- Status Laporan Section -->
+
+        <ImageView
+            android:id="@+id/hapusmulai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"
+            app:layout_constraintBottom_toBottomOf="@+id/etMulai"
+            app:layout_constraintEnd_toEndOf="@+id/etMulai"
+            app:layout_constraintHorizontal_bias="0.926"
+            app:layout_constraintStart_toStartOf="@+id/etMulai"
+            app:layout_constraintTop_toTopOf="@+id/etMulai" />
+
+        <TextView
+            android:id="@+id/tvSampai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="116dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/jak"
+            android:text="Sampai"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTanggal" />
+
+        <EditText
+            android:id="@+id/etSampai"
+            android:layout_width="147dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/email"
+            android:hint="Pilih Tanggal"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:paddingStart="12dp"
+            android:inputType="datetime"
+            android:textColorHint="#909090"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSampai" />
+
+
+        <ImageView
+            android:id="@+id/hapussampai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_close_24"
+            app:layout_constraintBottom_toBottomOf="@+id/etSampai"
+            app:layout_constraintEnd_toEndOf="@+id/etSampai"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="@+id/etSampai"
+            app:layout_constraintTop_toTopOf="@+id/etSampai" />
+
+        <TextView
+            android:id="@+id/tvStatusLaporan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakmed"
+            android:text="Status Laporan"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMulai" />
+
+        <CheckBox
+            android:id="@+id/cbBaru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Baru"
+            android:background="@drawable/email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jakmed"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStatusLaporan" />
+
+        <CheckBox
+            android:id="@+id/cbProsesVerifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jakmed"
+            android:text="Proses Verifikasi"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbBaru" />
+
+        <CheckBox
+            android:id="@+id/cbTerverifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Terverifikasi"
+            android:background="@drawable/email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jakmed"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbProsesVerifikasi" />
+
+        <CheckBox
+            android:id="@+id/cbDitunda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ditunda"
+            android:background="@drawable/email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jakmed"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbTerverifikasi" />
+
+        <!-- Kirim Button -->
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/email"
+            android:backgroundTint="@color/ijo"
+            android:text="Kirim"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/cbDitunda" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

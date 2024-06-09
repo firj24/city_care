@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentHome">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akun"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="132sp"
+        android:fontFamily="@font/jakbold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/jak"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="39dp"/>
+
+    <TextView
+        android:id="@+id/namakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/akun"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:fontFamily="@font/jak"
+        android:gravity="center_vertical"
+        android:text="Firji Achmad Fahresi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/jak"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="39dp"/>
+
+    <TextView
+        android:id="@+id/emakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/akun"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/jak"
+        android:text="fachmadfahresi@gmail.com"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/jak"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="39dp"/>
+
+    <TextView
+        android:id="@+id/genderakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/akun"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:fontFamily="@font/jak"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:gravity="center_vertical"
+        android:text="Pria"/>
+
+    <Button
+        android:layout_width="279dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="Ubah kata sandi"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jakbold"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="4dp"
+        android:paddingStart="-119dp"/>
+
+    <Button
+        android:id="@+id/keluar"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ijo"
+        android:layout_marginStart="41dp"
+        android:text="Keluar"
+        android:textAllCaps="false"
+        android:fontFamily="@font/jakmed"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/hapusakun"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#800000"
+        android:layout_marginStart="41dp"
+        android:text="Hapus Akun!"
+        android:textAllCaps="false"
+        android:fontFamily="@font/jakmed"
+        android:textColor="@color/white"/>
+</LinearLayout>

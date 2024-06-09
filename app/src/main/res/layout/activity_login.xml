@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    tools:context=".Login">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:text="CityCare"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:fontFamily="@font/jakbold"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CityCare: Membangun Masa Depan Kota yang Lebih Baik, Bersama"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jakmed"
+        android:textSize="14dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/jakbold"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="287dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/email"
+        android:hint="Masukkan Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:maxLines="1"
+        android:fontFamily="@font/jak"
+        android:textColorHint="#909090"
+        android:textSize="14dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColorHint="#909090"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/email"
+        android:hint="Masukkan Password"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:paddingRight="8dp"
+        android:longClickable="false"
+        android:fontFamily="@font/jak"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/togglePasswordVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:onClick="togglePasswordVisibility" />
+
+    <TextView
+        android:id="@+id/lupapass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Lupa Kata Sandi?"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="64dp"
+        android:textColor="#153C4B"
+        android:fontFamily="@font/jakbold"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/masuk"
+        android:layout_width="251dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#153C4B"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:fontFamily="@font/jakmed"
+        app:cornerRadius="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Memiliki Akun?"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jak"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/belumpunya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Daftar"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakbold"
+            android:textColor="#153C4B"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

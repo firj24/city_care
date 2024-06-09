@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orens">#FA9852</color>
+    <color name="orensa">#FF6B01</color>
+    <color name="biru">#1ABBE7</color>
+    <color name="ijo">#153C4B</color>
+    <color name="cari">#A0A0A0</color>
+    <color name="bir">#00BFFF</color>
+    <color name="ij">#008000</color>
+    <color name="darker_gray">#A9A9A9</color>
+    <color name="teks_dialog">#FFEB3B</color>
+</resources>

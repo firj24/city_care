@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Daftar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:text="CityCare"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:fontFamily="@font/jakbold"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jakmed"
+        android:text="CityCare: Membangun Masa Depan Kota yang Lebih Baik, Bersama"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:fontFamily="@font/jakbold"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/masuknama"
+        android:layout_width="287dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jak"
+        android:background="@drawable/email"
+        android:hint="Masukkan Nama Lengkap"
+        android:paddingStart="12dp"
+        android:textColorHint="#909090"
+        android:textSize="14dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Laki-laki"
+            android:fontFamily="@font/jak"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:fontFamily="@font/jak"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/daftaremail"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/email"
+        android:hint="Masukkan Email"
+        android:paddingStart="12dp"
+        android:layout_marginTop="12dp"
+        android:textColorHint="#909090"
+        android:fontFamily="@font/jak"
+        android:textSize="14dp" />
+    <EditText
+        android:id="@+id/daftarpassword"
+        android:fontFamily="@font/jak"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColorHint="#909090"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/email"
+        android:hint="Masukkan Password"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:paddingRight="8dp"
+        android:longClickable="false"
+        android:textSize="14dp" />
+    <ImageView
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jak"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:layout_gravity="end"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="70dp"
+        android:onClick="togglePasswordVisibility"/>
+    <EditText
+        android:id="@+id/daftarpassword2"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColorHint="#909090"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/email"
+        android:fontFamily="@font/jak"
+        android:hint="Masukkan ulang Password"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:paddingRight="8dp"
+        android:longClickable="false"
+        android:textSize="14dp" />
+    <ImageView
+        android:id="@+id/hide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:layout_gravity="end"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="70dp"
+        android:onClick="togglePasswordVisibility"/>
+    <Button
+        android:id="@+id/daftar"
+        android:layout_width="251dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#153C4B"
+        android:text="Daftar"
+        android:fontFamily="@font/jakmed"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:cornerRadius="15dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun?"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jak"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/punyaakun"
+            android:fontFamily="@font/jakbold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Masuk"
+            android:textStyle="bold"
+            android:textColor="#153C4B"
+            android:textSize="14dp"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

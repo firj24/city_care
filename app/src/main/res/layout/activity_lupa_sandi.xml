@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    tools:context=".LupaSandi">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CityCare"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Lupa Kata Sandi"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Masukkan email Anda di bawah ini untuk menerima instruksi pengaturan ulang kata sandi"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/lupaemail"
+        android:layout_width="287dp"
+        android:layout_marginTop="65dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/email"
+        android:hint="Masukkan Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:textColorHint="#909090"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/selanjutnya"
+        android:layout_width="251dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="#153C4B"
+        android:textColor="@color/white"
+        android:text="Selanjutnya"
+        android:textSize="16dp"
+        app:cornerRadius="15dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingat Kata Sandi?"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/ingatsandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Masuk"
+            android:textStyle="bold"
+            android:textColor="#153C4B"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

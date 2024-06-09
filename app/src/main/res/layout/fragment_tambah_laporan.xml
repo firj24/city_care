@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="100dp"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".fragment.FragmentTambahLaporan">
+
+    <!-- LinearLayout digunakan untuk mengatur tata letak secara vertikal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="95dp"
+        android:padding="10dp">
+
+        <!-- Judul Tambahkan Laporan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/jak"
+            android:text="Tambahkan Laporan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Informasi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- Tanda peringatan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/alert" />
+
+            <!-- Pesan informasi -->
+            <TextView
+                android:layout_width="243dp"
+                android:layout_height="38dp"
+                android:fontFamily="@font/jak"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-40dp"
+                android:text="Pastikan masukkan foto yang diambil di lokasi kejadian"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- Ikona informasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="-32dp"
+                android:drawableStart="@drawable/baseline_info_outline_24" />
+        </LinearLayout>
+
+        <!-- Tombol untuk menambahkan media -->
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="1010dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Judul -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/jak"
+                android:text="Media (Foto/Video/Suara)"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- RecyclerView untuk menampilkan media -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recymedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal" />
+
+            <!-- Tombol untuk menambahkan media -->
+            <Button
+                android:id="@+id/tambahmedia"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email"
+                android:drawableLeft="@drawable/baseline_add_24"
+                android:drawablePadding="8dp"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:text="Tambah Media"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- Judul Lokasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Lokasi"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- Tombol untuk menambahkan lokasi -->
+            <Button
+                android:id="@+id/btnTambahLokasi"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/email"
+                android:drawableLeft="@drawable/baseline_location_pin_24"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:text="Tambah Lokasi"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <!-- TextView untuk menampilkan latitude -->
+
+
+            <LinearLayout
+                android:id="@+id/linearbungkus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/transparent_background"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="8dp" />
+
+                    <Button
+                        android:id="@+id/ubahLok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginEnd="4dp"
+                        android:fontFamily="@font/jakmed"
+                        android:text="Ubah"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jak"
+                    android:text="Latitude:"
+                    android:textColor="@color/white" />
+
+                <!-- TextView untuk menampilkan longitude -->
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jak"
+                    android:text="Longitude:"
+                    android:textColor="@color/white" />
+
+                <!-- TextView untuk menampilkan alamat -->
+                <TextView
+                    android:id="@+id/tvAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jak"
+                    android:text="Alamat:"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <!-- MapView untuk menampilkan lokasi -->
+
+            <!-- Pesan informasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jak"
+                android:text="Mohon pastikan koordinat sudah sesuai dengan lokasi laporan"
+                android:textColor="@color/orensa"
+                android:textSize="12dp" />
+
+            <!-- Judul Kategori -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jak"
+                android:text="Kategori"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- Pilihan Kategori -->
+            <TextView
+                android:id="@+id/kateg"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:background="@drawable/email"
+                android:backgroundTint="@color/ijo"
+                android:drawableRight="@drawable/baseline_arrow_drop_down_24"
+                android:fontFamily="@font/jakmed"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:text="Pilih Kategori Kerusakan Infrastruktur"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- Pertanyaan tentang dampak -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jak"
+                android:text="Apakah ada dampak dari kerusakan?"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <!-- RadioGroup untuk memilih dampak -->
+            <RadioGroup
+                android:id="@+id/radioker"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <!-- RadioButton "Tidak" -->
+                <RadioButton
+                    android:id="@+id/tidker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jak"
+                    android:text="Tidak" />
+
+                <!-- RadioButton "Iya" -->
+                <RadioButton
+                    android:id="@+id/iyaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/jak"
+                    android:text="Iya" />
+            </RadioGroup>
+
+            <!-- Pilihan dampak -->
+            <TextView
+                android:id="@+id/pilihdampak"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start|center"
+                android:background="@drawable/email"
+                android:backgroundTint="@color/ijo"
+                android:drawableRight="@drawable/baseline_arrow_drop_down_24"
+                android:fontFamily="@font/jakmed"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:text="Pilih Dampak"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <!-- Catatan -->
+            <EditText
+                android:id="@+id/catat"
+                android:layout_width="310dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/titude"
+                android:fontFamily="@font/jak"
+                android:gravity="start"
+                android:hint="Masukkan Catatan"
+                android:maxLines="@integer/material_motion_duration_long_1"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="#909090"
+                android:textSize="14dp" />
+
+            <!-- Tombol Kirim -->
+            <Button
+                android:id="@+id/Kirimlap"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/email"
+                android:backgroundTint="@color/ijo"
+                android:fontFamily="@font/jak"
+                android:text="Kirim"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

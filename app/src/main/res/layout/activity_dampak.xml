@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    tools:context=".Dampak">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Dampak"
+        android:fontFamily="@font/jakbold"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="120dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih 1 kategori"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jak"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="75dp">
+
+        <FrameLayout
+            android:id="@+id/macet"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/butgam"
+            android:layout_marginEnd="5dp">
+
+            <ImageButton
+                android:id="@+id/mac"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/macet"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/ijo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jak"
+                android:text="Macet"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/kecelakaan"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/butgam"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageButton
+                android:id="@+id/kecelak"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/kecelakaan"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/ijo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecelakaan"
+                android:fontFamily="@font/jak"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/meninggal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/butgam"
+            android:layout_marginEnd="10dp">
+
+            <ImageButton
+                android:id="@+id/mening"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/meninggal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:backgroundTint="@color/ijo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meninggal"
+                android:fontFamily="@font/jak"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/logistik"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/butgam">
+
+            <ImageButton
+                android:id="@+id/logis"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/ijo"
+                android:scaleType="fitXY"
+                android:src="@drawable/logistik" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/jak"
+                android:text="Logistik"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/terlambat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/butgam">
+
+            <ImageButton
+                android:id="@+id/terlam"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/ijo"
+                android:scaleType="fitXY"
+                android:src="@drawable/terlambat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/jak"
+                android:text="Terlambat"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cedera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/butgam">
+
+            <ImageButton
+                android:id="@+id/ceder"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/ijo"
+                android:scaleType="fitXY"
+                android:src="@drawable/cedera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/jak"
+                android:text="Kecelakaan"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <FrameLayout
+            android:id="@+id/lainnya"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/butgam">
+
+            <ImageButton
+                android:id="@+id/lain"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/ijo"
+                android:scaleType="fitXY"
+                android:src="@drawable/lainnya" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/jak"
+                android:text="Lainnya"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

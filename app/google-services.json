@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936412160141",
+    "project_id": "proyekakhir-ef35b",
+    "storage_bucket": "proyekakhir-ef35b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936412160141:android:81935d258cfba3e66d42c4",
+        "android_client_info": {
+          "package_name": "com.android.proyekakhir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnza4lR0o60PNJHPNxlNMjofJHalHdLHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

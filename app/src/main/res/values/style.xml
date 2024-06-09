@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Other styles -->
+    <style name="DialogButtonText" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:textColor">#FFEB3B</item> <!-- Warna teks yang lebih terang -->
+    </style>
+</resources>

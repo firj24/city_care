@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Proyek Akhir</string>
+    <string name="tidak_menerima_otp">Tidak Menerima OTP?</string>
+    <string name="kirim_ulang">Kirim Ulang</string>
+    <string name="selanjutnya">Selanjutnya</string>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    <!-- TODO: Remove or change this placeholder text -->
+        <string name="latitude_placeholder">Latitude: </string>
+        <string name="longitude_placeholder">Longitude: </string>
+        <string name="alamat_placeholder">Alamat: </string>
+        <string name="latitude_label">Latitude: %1$f</string>
+        <string name="longitude_label">Longitude: %1$f</string>
+        <string name="alamat_label">Alamat: %1$s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filter_icon">filter icon</string>
+    <string name="search_icon">search icon</string>
+    <string name="issue_image">Issue image</string>
+    <string name="google_maps_key">AIzaSyC2QlMHV9-zBFiNIELQ6xIRgP3xgb5_rkM</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bir"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".ResetSandi">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jak"
+        android:text="CityCare"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Lupa Kata Sandi"
+        android:fontFamily="@font/jak"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jak"
+        android:layout_gravity="center"
+        android:text="Masukkan kata sandi baru dibawah ini untuk mereset kata sandi lama Anda "
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/passwordbaru"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColorHint="#909090"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/email"
+        android:fontFamily="@font/jak"
+        android:hint="Masukkan Kata Sandi Baru"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:paddingRight="8dp"
+        android:longClickable="false"
+        android:textSize="14dp" />
+    <ImageView
+        android:id="@+id/hidee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:layout_gravity="end"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="70dp"
+        android:onClick="togglePasswordVisibility"/>
+    <EditText
+        android:id="@+id/passwordbaru2"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:textColorHint="#909090"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/email"
+        android:fontFamily="@font/jak"
+        android:hint="Ulang Kata Sandi Baru"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:inputType="textPassword"
+        android:paddingRight="8dp"
+        android:longClickable="false"
+        android:textSize="14dp" />
+    <ImageView
+        android:id="@+id/hidee2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:layout_gravity="end"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="70dp"
+        android:onClick="togglePasswordVisibility"/>
+    <Button
+        android:id="@+id/resetsandi"
+        android:layout_width="251dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jak"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="#153C4B"
+        android:text="Reset Sandi"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:cornerRadius="15dp"/>
+</LinearLayout>
